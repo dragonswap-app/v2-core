@@ -1,11 +1,11 @@
 {
-  "name": "@dragonswapp/v2-core",
-  "description": "Dragonswapp V2 Core Smart-Contracts",
+  "name": "@dragonswap/v2-core",
+  "description": "Dragonswap V2 Core Smart-Contracts",
   "license": "GPL-2.0",
   "version": "1.0.0",
-  "homepage": "https://dragonswapp.app",
+  "homepage": "https://dragonswap.app",
   "keywords": [
-    "dragonswapp",
+    "dragonswap",
     "core",
     "v2"
   ],
