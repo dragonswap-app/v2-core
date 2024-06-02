@@ -13,18 +13,9 @@
     "type": "git",
     "url": "https://github.com/dragonswap-app/v2-core"
   },
-  "files": [
-    "contracts/interfaces",
-    "contracts/libraries",
-    "artifacts/contracts/DragonswapV2Factory.sol/DragonswapV2Factory.json",
-    "artifacts/contracts/DragonswapV2Pool.sol/DragonswapV2Pool.json",
-    "artifacts/contracts/interfaces/**/*.json",
-    "!artifacts/contracts/interfaces/**/*.dbg.json"
-  ],
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
@@ -51,5 +42,6 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test"
-  }
+  },
+  "packageManager": "yarn@1.22.1"
 }
