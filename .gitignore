@@ -1,5 +1,15 @@
-artifacts/
 cache/
 crytic-export/
 node_modules/
 typechain/
+
+artifacts/*
+!artifacts/contracts
+artifacts/contracts/*
+!artifacts/contracts/DragonswapV2Pool.sol
+artifacts/contracts/DragonswapV2Pool.sol/DragonswapV2Pool.dbg.json
+!artifacts/contracts/DragonswapV2Factory.sol
+artifacts/contracts/DragonswapV2Factory.sol/DragonswapV2Factory.dbg.json
+!artifacts/contracts/interfaces
+artifacts/contracts/interfaces/**/*.dbg.json
+
