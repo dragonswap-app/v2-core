@@ -159,15 +159,15 @@ describe('DragonswapV2Factory', () => {
       await expect(factory.enableFeeAmount(500, 16834)).to.be.reverted
     })
     it('fails if already initialized', async () => {
-      await factory.enableFeeAmount(100, 5)
-      await expect(factory.enableFeeAmount(100, 10)).to.be.reverted
+      await factory.enableFeeAmount(50, 1)
+      await expect(factory.enableFeeAmount(50, 1)).to.be.reverted
     })
     it('sets the fee amount in the mapping', async () => {
-      await factory.enableFeeAmount(100, 5)
-      expect(await factory.feeAmountTickSpacing(100)).to.eq(5)
+      await factory.enableFeeAmount(50, 1)
+      expect(await factory.feeAmountTickSpacing(50)).to.eq(1)
     })
     it('emits an event', async () => {
-      await expect(factory.enableFeeAmount(100, 5)).to.emit(factory, 'FeeAmountEnabled').withArgs(100, 5)
+      await expect(factory.enableFeeAmount(50, 1)).to.emit(factory, 'FeeAmountEnabled').withArgs(50, 1)
     })
     it('enables pool creation', async () => {
       await factory.enableFeeAmount(250, 15)
