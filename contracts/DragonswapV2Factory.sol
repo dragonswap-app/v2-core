@@ -6,8 +6,6 @@ import './interfaces/IDragonswapV2Factory.sol';
 import './DragonswapV2PoolDeployer.sol';
 import './NoDelegateCall.sol';
 
-import './DragonswapV2Pool.sol';
-
 /// @title Canonical Dragonswap V2 factory
 /// @notice Deploys Dragonswap V2 pools and manages ownership and control over pool protocol fees
 contract DragonswapV2Factory is IDragonswapV2Factory, DragonswapV2PoolDeployer, NoDelegateCall {
